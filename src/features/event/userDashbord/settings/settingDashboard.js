@@ -12,7 +12,7 @@ const SettingDashBoard = () => {
   return <Grid>
       <Grid.Column width={12} >
         <Switch>
-        <Redirect />
+        <Redirect exact from="/settings" to="/settings/basics" />
           <Route path="/settings/basics" component = {BasicPage}/>
           <Route path="/settings/about" component ={AboutPage} />
           <Route path="/settings/photos" component ={PhotoPage}/>
