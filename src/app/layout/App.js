@@ -8,7 +8,7 @@ import PeopleDashboard from "../../features/event/userDashbord/users/peopleDashb
 import SettingDashboard from "../../features/event/userDashbord/settings/settingDashboard";
 import Navbar from "../../features/Navbar/Navbar";
 import { Container } from "semantic-ui-react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch} from "react-router-dom";
 import "./App.css";
 
 class App extends Component {
@@ -21,14 +21,14 @@ class App extends Component {
         <Route
           path="/(.+)"
           render={() => (
-            <Fragment>
+            <Fragment >
               <Navbar />
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
                 <Route path="/people" component={PeopleDashboard} />
                 <Route path="/event:id" component={EventDetailpage} />
                 <Route path="/profile:id" component={UserDetails} />
-                <Route path="/setting" component={SettingDashboard} />
+                <Route path="/settings" component={SettingDashboard} />
                 <Route path="/createEvent" component={EventForm} />
               </Container>
             </Fragment>

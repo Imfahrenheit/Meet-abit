@@ -3,7 +3,7 @@ import React from 'react'
 const PhotoPage = () => {
   return (
     <div>
-      <h2>photo page</h2>
+      <h1> photo page </h1>
     </div>
   )
 }

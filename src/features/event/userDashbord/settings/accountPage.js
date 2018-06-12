@@ -3,7 +3,7 @@ import React from 'react'
 const AccountPage = () => {
   return (
     <div>
-      <h2> Account page</h2>
+      <h1> Account page </h1>
     </div>
   )
 }
