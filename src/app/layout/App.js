@@ -7,8 +7,10 @@ import EventDetailpage from "../../features/event/eventDetail/eventDetailPage";
 import PeopleDashboard from "../../features/event/userDashbord/users/peopleDashboard";
 import SettingDashboard from "../../features/event/userDashbord/settings/settingDashboard";
 import Navbar from "../../features/Navbar/Navbar";
+import TestCom from '../../features/event/testArea/testCom'
 import { Container } from "semantic-ui-react";
 import { Route, Switch} from "react-router-dom";
+
 import "./App.css";
 
 class App extends Component {
@@ -25,6 +27,7 @@ class App extends Component {
               <Navbar />
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
+                 <Route path="/test" component={TestCom} />
                 <Route path="/people" component={PeopleDashboard} />
                 <Route path="/event:id" component={EventDetailpage} />
                 <Route path="/profile:id" component={UserDetails} />
