@@ -36,9 +36,9 @@ import EventAttendee from './EventAttendee'
         </Segment>
         <Segment clearing>
           <span> {event.description} </span>
-
           <Button onClick={eventEdit(event)} as="a" color="teal" floated="right" content="View" />
-          <Button onClick={deleteItem(event)} as="a" color="red" floated="right" content="Delete" />
+          
+          <Button onClick={deleteItem(event.id)} as="a" color="red" floated="right" content="Delete" />
         </Segment>
       </Segment.Group>;
   }
